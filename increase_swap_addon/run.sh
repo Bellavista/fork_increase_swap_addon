@@ -10,7 +10,7 @@ SWAP_FILE="${SWAP_LOCATION}/_swap.swap"
 TEMP_SWAP_SIZE=$((SWAP_SIZE / 2))
 TEMP_SWAP_FILE="${SWAP_LOCATION}/_temp_swap.swap"
 
-possible_locations=("addons" "media" "share" "backup")
+possible_locations=("addons" "media" "share" "backup" "/sdb/sdb1" "/mmcblk0/mmcblk0p1")
 
 remove_old_swap_file() {
   for location in "${possible_locations[@]}"; do
